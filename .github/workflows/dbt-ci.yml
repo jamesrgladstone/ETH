@@ -59,9 +59,9 @@ jobs:
       - name: Clone impacted incremental models to PR DBT_SCHEMA  
         run: |
           dbt clone \
-            --target ci
-            --defer \
+            --target ci \
             --state ./state \
+            --defer \
             --select "state:modified+,config.materialized:incremental,state:old"
             
       - name: Slim build (modified + downstream)
