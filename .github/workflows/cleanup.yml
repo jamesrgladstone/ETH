@@ -1,4 +1,4 @@
-name: Cleanup PR Schemas
+name: Cleanup PR Schemas 
 
 on:
   schedule:
